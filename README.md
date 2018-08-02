@@ -1,2 +1,0 @@
-# myrner.github.io
-Portfolio
