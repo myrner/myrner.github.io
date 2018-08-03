@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+       header {
+            font-size: 2em;
+            font-weight: 100;
+        }
+        #navbar header {
+            color: black;
+            padding: 5px;
+        }
+        code {
+            background-color: #e0e0e0;
+        }
+        footer {
+            height: 5%;
+            text-align: center;
+            padding: 10px;
+        }
+        footer > a {
+            color: darkblue;
+        }
+/* DESKTOP SIZE BELOW */
+        @media (min-width: 600px) {
+            footer {
+                display: none;
+            }
+            #navbar {
+                background-color: lightgrey;
+                height: 100%;
+                width: 200px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+            }
+            .nav-link {
+                display: block;
+                padding: 5px;
+                border-top: solid 1px black;
+            }
+            .nav-link:hover {
+                background-color: darkslategrey;
+                color: white;
+            }
+            #main-doc {
+                margin-left: 200px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+/* MOBILE SIZE BELOW */
+        @media (max-width: 599px) {
+            #navbar {
+                width: 100%;
+                top: 0px;
+                right: 0px;
+                background-color: lightgrey;
+                margin-bottom: 10px;
+            }
+            .nav-link {
+                border-top: solid 1px black;
+                display: flex;
+            }
+           .nav-link:hover {
+                background-color: darkslategrey;
+                color: white;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                padding: 5px;
+            }
+        }
+    </style>
+    <body>
+        <div id="top-placeholder"></div>
+        <nav id="navbar">
+            <header>Index</header>
+            <a class="nav-link" href="#Section_One">Section One</a>
+            <a class="nav-link" href="#Section_Two">Section Two</a>
+            <a class="nav-link" href="#Section_Three">Section Three</a>
+            <a class="nav-link" href="#Section_Four">Section Four</a>
+            <a class="nav-link" href="#Section_Five">Section Five</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Section_One">
+                <header>Section One</header>
+                <p>
+                    Lorem ipsum dolor sit amet, ut lobortis mandamus vel, ius te iudico delectus posidonium, solum maiorum ut has. Nam ne virtute detracto, ex soluta malorum cum, eam cu enim viris apeirian. Fugit delicatissimi eam no. Cum eligendi postulant no, tacimates consequuntur at sea. Sit in semper mandamus efficiendi, sit et novum volumus.
+                </p>
+                <code>const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');</code>
+                <p>
+                    Mea modus facete intellegat no, in velit vocibus tacimates sea. Omnis interesset nec id. Ut cum causae propriae. Sit cibo fabellas nominati ei, id his natum atomorum.
+                </p>
+            </section>
+            <section class="main-section" id="Section_Two">
+                <header>Section Two</header>
+                <p>
+                    Deleniti indoctum qui an. Et etiam omnesque mei. Mea lorem evertitur forensibus eu, nec an omnis latine inermis. Ut tota placerat est. Verear vivendo eum eu, mea at novum essent scaevola. Et duo quis accusam.
+                </p>
+                <code>const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');</code>
+                <p>
+                    Has te labores fuisset vulputate. Eum ut dicam atomorum, lobortis conclusionemque no vis. At vis legere delectus ocurreret, pro ne tantas verear disputando. Et qui ludus conceptam. Ferri sanctus usu ut, essent labores usu ea, eirmod phaedrum cu qui.
+                </p>
+            </section>
+            <section class="main-section" id="Section_Three">
+                <header>Section Three</header>
+                <p>
+                    Meliore albucius ea qui. Ridens impedit deleniti ea eam. Quod minim ei sit, dicat persecuti vix te, posidonium percipitur eam in. Eam cu laoreet nominavi, vis porro nostrum efficiantur ex. Eam ut simul tibique, stet errem possim sea id. Enim iusto oblique mel at, quas feugait delectus in cum, ex eos audire evertitur aliquando. Option quaeque noluisse ut mea, melius commune complectitur sea an, his te alia evertitur.
+                </p>
+                <code>const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');</code>
+                <p>
+                    Nec ut nostrud patrioque, quem graeco cum ut. Dico exerci nonumy usu ea, usu ullum liber te, oratio regione suscipit ea his. Nam ei oblique nominati. Cum iriure facilisi consequuntur ad. Sit te virtute epicuri, diceret vivendo ei usu. 
+                </p>
+            </section>
+            <section class="main-section" id="Section_Four">
+                <header>Section Four</header>
+                <p>
+                    Dicat graeco omittam vim at, ignota philosophia et mei, et ius laoreet similique. Ius mundi minimum elaboraret id, est habeo verear intellegebat no, mea vocibus vivendo consetetur ne. Vis mutat vocent malorum et, per quas rebum placerat ea. Ex vel mundi scriptorem.
+                </p>
+                <code>const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');</code>
+                <p>
+                    Et nominati expetendis incorrupte eum. Noster graeco eu mea, rebum exerci constituto vel te. Has no diam eripuit, pro cu mediocrem salutatus scriptorem. Sea te ipsum dicta nemore. Vel ei vidit consul voluptaria, eu quo percipit assentior, eos no solet detraxit mnesarchum.
+                </p>
+            </section>
+            <section class="main-section" id="Section_Five">
+                <header>Section Five</header>
+                <p>
+                    Ut patrioque liberavisse qui, tale consectetuer vel ea. At mel iusto dicit neglegentur. Paulo corpora epicuri usu ad. Has partem sanctus habemus an, ne veritus disputando pri, in inani debitis pericula vis. Quot tacimates sea ut. No pro laudem moderatius. Vel aeterno praesent inciderint ea, sit ex inimicus repudiare definiebas.
+                </p>
+                <code>const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');</code>
+                <p>
+                    Per cu nulla impetus definiebas. Ex debitis accusamus nam, nulla alterum cum in. Cu nemore molestiae nam, quo ex erat oporteat. Fugit laudem ad mel, cum ex omnis impedit. Eu salutandi percipitur mei, eu mollis timeam forensibus mea.
+                </p>
+            </section>
+        </main>
+        <footer><a href="#top-placeholder">Back to top</a></footer>
+    </body>
+</html>
