@@ -45,6 +45,7 @@
                 font-weight: 100;
             }
             h2 {
+                text-align: center;
                 font-weight: 100;
             }
             #h-box {
@@ -62,10 +63,21 @@
                 width: 250px;
                 height: 250px;
             }
+            #about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 3em;
+            }
+            #profile-pic {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
             footer {
                 text-align: center;
                 margin-top: 2em;
-                padding: 1em;
+                padding: 3em;
                 background-color: rgba(211, 211, 211, 0.55);
                 display: flex;
                 justify-content: space-around;
@@ -78,7 +90,8 @@
             footer > a:hover {
                 color: rgb(255, 0, 0);
             }
-         /*   .container {
+         /* GENERIC NON-RESPONSIVE FALLBACK RULES: 
+            .container {
                 margin-top: 2em;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -116,18 +129,21 @@
     <body>
         <header>
             <nav>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#projects-top">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
             <div id="h-box">
                 <h1>Niels Myrner</h1>
                 <h2>E-Learning Developer</h2>
             </div>
         </header>
+        <div id="projects-top">
+            <h2>Projects</h2>
+        </div>
         <div class="container">
             <div class="box-folio">
-                <a href="technicaldocpage.html" target="_blank">
+                <a id="projects-top" href="technicaldocpage.html" target="_blank">
                 <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/technical_doc_scrn.png">
                 <p>Technical Documentation</p>
                 </a>
@@ -163,9 +179,14 @@
                 </a>
             </div>
         </div>
-        <footer>
+        <div id="about">
+            <h2>About</h2>
+            <img id="profile-pic" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/IMG_9149+low-res+copy.jpg">
+            <p>Hi! I'm Niels Myrner. I'm a musician, educator and e-learning developer based in Mill Valley, CA. You can find more about me and projects I'm involved in below. Thanks for stopping by!</p>
+        </div>
+        <footer id="contact">
+            <a href="https://github.com/myrner">GitHub</a>
             <a href="https://www.linkedin.com/in/nielsmyrner/">linkedIn</a>
-            <a href="https://myrner.github.io/">GitHub</a>
             <a href="https://www.nkmdrums.com">blog</a>
         </footer>
     </body>
