@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body {
+                font-family: sans-serif;
+                margin: 0;
+            }
+            header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-end;
+                background-color: rgb(19, 89, 149);
+                position: fixed;
+                width: 100%;
+                top: 0px;
+                margin: 0;
+            }
+            #logo {
+                width: 300px;
+                padding: .75em;
+            }
+            #nav-bar {
+                padding-bottom: .25em;
+            }
+            a {
+                text-decoration: none;
+                font-size: 1.25em;
+                font-weight: 100;
+                margin: .4em;
+                color: whitesmoke;
+            }
+            a:hover {
+                color: red;
+            }
+            main {
+                padding-top: 110px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr fr;
+                grid-gap: 1em;
+                justify-items: center;
+            }
+            #icon-1, #icon-2, #icon-3 {
+                padding: 0;
+            }
+            #icon-1 {
+                width: 90px;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            #icon-2 {
+                width: 90px;
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            #icon-3 {
+                width: 90px;
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+            #p-1 {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            #p-2 {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            #p-3 {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+            #v-1 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                background: radial-gradient(grey, lightgrey);
+                padding-top: 2em;
+                padding-bottom: 2em;
+                margin-top: 2em;
+            }
+            #video {
+                box-shadow: 10px 10px 30px grey;
+            }
+            form {
+                padding: 25px;
+                text-align: center;
+            }
+            @media (min-width: 600px) {
+                main {
+                    width: 80%;
+                    justify-items: right;
+                }
+                #icon-1, #icon-2, #icon-3 {
+                    margin-right: 20px
+                }
+            }
+            @media (max-width: 599px) {
+                main {
+                    margin-right: 1em;
+                }
+                iframe {
+                    width: 256px;
+                    height: 144px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/e-med_logo.png">
+            <nav id="nav-bar">
+            <a class="nav-link" href="#video">Video</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#form">Contact</a>
+                </nav>
+        </header>
+        <main id="services">
+            <img id="icon-1" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/family-icon-AG.svg">
+            <p id="p-1">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
+            <img id="icon-2" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/survey-AG.svg">
+            <p id="p-2">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
+            <img id="icon-3" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/heart-icon-AG.svg">
+            <p id="p-3">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
+        </main>
+        <div id="v-1">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XOxQyO-Sw-g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Request more information:</label>
+                <input required name="email" id="email" type="email" placeholder="Enter your email address">
+                <input id="submit" type="submit" value="Submit">
+                </form>
+        </footer>
+    </body>
+</html>
