@@ -1,22 +1,160 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Niels Myrner - GitHub</title>
-            <style>
-                html, body {
-                    font-family: sans-serif;
-                    background-color: whitesmoke;
-                    text-align: center;
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Niels Myrner</title>
+        <style>
+            html, body {
+                font-family: sans-serif;
+                background-color: whitesmoke;
+                overflow-x: hidden;
+                width: 100vw;
+                margin: 0;
+            }
+            header {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.93);
+                height: 500px;
+                height: 100vh;
+                color: whitesmoke;
+                width: 100vw;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                position: fixed;
+                justify-content: space-around;
+                background-color: rgba(0, 0, 0, 0.92);
+                padding-top: 1em;
+                padding-bottom: 1em;
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+            }
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+                font-weight: 100; 
+            }
+            a:hover {
+                color: lightgrey;
+            } 
+            h1 {
+                font-weight: 100;
+            }
+            h2 {
+                font-weight: 100;
+            }
+            #h-box {
+                margin: auto;
+            }
+            .box-folio {
+                text-align: center;
+                background-color: #2f2f2f;
+                font-weight: 100;
+                color: lightgrey;
+                border: solid 3px white;
+                box-shadow: 5px 5px 10px #5c6680;
+            }
+            .box {
+                width: 250px;
+                height: 250px;
+            }
+            footer {
+                text-align: center;
+                margin-top: 2em;
+                padding: 1em;
+                background-color: rgba(211, 211, 211, 0.55);
+                display: flex;
+                justify-content: space-around;
+            }
+            footer > a {
+                text-decoration: none;
+                color: #2200b2;
+                font-weight: normal;
+            }
+            footer > a:hover {
+                color: rgb(255, 0, 0);
+            }
+         /*   .container {
+                margin-top: 2em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                grid-gap: 2em;
+            } */
+            @media (min-width: 899px) {
+                .container {
+                    margin-top: 2em;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    justify-items: center;
+                    grid-gap: 2em;
                 }
-            </style>
-        </head>
-        <body>
-            <h1>Hello World</h1>
-            <p>You will find new developments here soon.</p>
-            <hr>
-            <p>Please visit <a href="https://www.nkmdrums.com">nkmdrums.com</a> in the meantime.</p>
-            <hr>
-            <p>Warm Regards,<br>
-            Niels Myrner</p>
-        </body>
+            }
+            @media (min-width: 600px) and (max-width: 898px) {
+                .container {
+                    margin-top: 2em;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-items: center;
+                    grid-gap: 2em;
+                }
+            }
+            @media (max-width: 599px) {
+                .container {
+                    margin-top: 2em;
+                    display: grid;
+                    justify-items: center;
+                    grid-gap: 2em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div id="h-box">
+                <h1>Niels Myrner</h1>
+                <h2>E-Learning Developer</h2>
+            </div>
+        </header>
+        <div class="container">
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/technical_doc_scrn.png">
+                <p>Technical Documentation</p>
+            </div>
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/tribute_page_scrn.png">
+                <p>Tribute Page</p>
+            </div>
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/landing_page_scrn.png">
+                <p>Landing Page</p>
+            </div>
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/survey_form_scrn.png">
+                <p>Survey Form</p>
+            </div>
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/youtube_scrn.png">
+                <p>Video Production</p>
+            </div>
+            <div class="box-folio">
+                <img class="box" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/storyline_scrn.png">
+                <p>Articulate Storyline Interaction</p>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.linkedin.com/in/nielsmyrner/">linkedIn</a>
+            <a href="https://myrner.github.io/">GitHub</a>
+            <a href="https://www.nkmdrums.com">blog</a>
+        </footer>
+    </body>
+</html>
