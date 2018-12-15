@@ -1,12 +1,17 @@
-/* sample xapi statement - json object */
+/* sample xapi statement */
+
+var player = GetPlayer();
+var uNamejs = player.GetVar("uName");
+var uEmailjs = player.GetVar("uEmail");
+
 
 {
    "actor": {
-       "name": "Niels",
-       "mbox": "mailto:nielsmyrner@gmail.com"
+       "name": uNamejs,
+       "mbox": "mailto:" + uEmailjs
    }, 
    "verb": {
-       "id": "http://activitystrea.ms/schema/1.0/complete",
+       "id":"http://activitystrea.ms/schema/1.0/complete",
        "dispay": { "en-US": "completed" }
    }, 
    "object": {
