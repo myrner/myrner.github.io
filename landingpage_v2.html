@@ -14,7 +14,7 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: flex-end;
-                background-color: rgb(19, 89, 149);
+                background-color: #4a626d;
                 position: fixed;
                 width: 100%;
                 top: 0px;
@@ -25,7 +25,7 @@
                 padding: .75em;
             }
             #nav-bar {
-                padding-bottom: .25em;
+                padding-bottom: .5em;
             }
             a {
                 text-decoration: none;
@@ -35,31 +35,31 @@
                 color: whitesmoke;
             }
             a:hover {
-                color: red;
+                color: #6ef9ff;
             }
             main {
-                padding-top: 110px;
+                padding-top: 180px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr fr;
-                grid-gap: 1em;
+                grid-gap: 5em;
                 justify-items: center;
             }
             #icon-1, #icon-2, #icon-3 {
                 padding: 0;
             }
             #icon-1 {
-                width: 90px;
+                width: 100px;
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
             }
             #icon-2 {
-                width: 90px;
+                width: 100px;
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
             }
             #icon-3 {
-                width: 90px;
+                width: 100px;
                 grid-column: 1 / 2;
                 grid-row: 3 / 4;
             }
@@ -81,22 +81,24 @@
                 width: 100%;
                 justify-content: center;
                 align-items: center;
-                background: radial-gradient(grey, lightgrey);
-                padding-top: 2em;
-                padding-bottom: 2em;
-                margin-top: 2em;
-            }
-            #video {
-                box-shadow: 10px 10px 30px grey;
-            }
-            #source {
-                font-size: small;
-                text-align: center;
-                margin: 1em;
+                background-color: #a7c0cd;
+                padding-top: 3em;
+                padding-bottom: 1em;
+                margin-top: 3em;
+                margin-bottom: 1em;
             }
             form {
                 padding: 25px;
                 text-align: center;
+            }
+            input[type=submit] {
+                background-color: #4a626d;
+                border: none;
+                color: white;
+                padding: .5em 1em;
+                text-decoration: none;
+                margin: 1em;
+                cursor: pointer;
             }
             @media (min-width: 600px) {
                 main {
@@ -115,35 +117,37 @@
                     width: 256px;
                     height: 144px;
                 }
-            }
         </style>
     </head>
+
     <body>
         <header>
-            <img id="logo" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/e-med_logo.png">
+            <img id="logo" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/Logo+Blue%404x.png">
             <nav id="nav-bar">
-            <a class="nav-link" href="#video">Video</a>
-            <a class="nav-link" href="#services">Services</a>
-            <a class="nav-link" href="#form">Contact</a>
+            <a class="nav-link" href="#video">VIDEO</a>
+            <a class="nav-link" href="#services">SERVICES</a>
+            <a class="nav-link" href="#form">CONTACT</a>
                 </nav>
         </header>
         <main id="services">
-            <img id="icon-1" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/family-icon-AG.svg" alt="family icon">
+            <img id="icon-1" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/dev%404x.png" alt="family icon">
             <p id="p-1">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
-            <img id="icon-2" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/survey-AG.svg" alt="clipboard icon">
+            <img id="icon-2" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/add%404x.png" alt="clipboard icon">
             <p id="p-2">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
-            <img id="icon-3" src="https://s3-us-west-2.amazonaws.com/inspirelx/images/Med+Graphics/heart-icon-AG.svg" alt="heart icon">
+            <img id="icon-3" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/mobf%404x.png" alt="heart icon">
             <p id="p-3">Lorem ipsum dolor sit amet, vel paulo virtute id, at aperiri maluisset mel. Habeo cetero usu no. Commune dissentiunt in nec, euripidis rationibus scribentur et est, ad probatus voluptatum complectitur his.</p>
         </main>
         <div id="v-1">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XOxQyO-Sw-g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p id="source">Vital Signs: Getting Blood Pressure Under Control, Center for Disease Control and Prevention (CDC)</p>
+            <video id="video" width="576" height="360" controls>
+                <source src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/Google+Two+Step+Verification+-+Quick+Setup+Guide.mp4" type="video/mp4">
+            </video>
+            <p id="source"></p>
         </div>
         <footer>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <label for="email">Request more information:</label>
                 <input required name="email" id="email" type="email" placeholder="Enter your email address">
-                <input id="submit" type="submit" value="Submit">
+                <input class="button" id="submit" type="submit" value="SUBMIT">
                 </form>
         </footer>
     </body>
