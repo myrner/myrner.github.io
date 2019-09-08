@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Atomic+Age&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
         <title>Tribute Page</title>
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+                background: transparent;
+            }
             html, body {
-                font-family: sans-serif;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
             }
             #main {
-                background-color: rgba(73, 114, 168, 0.47);
+                background-color: #4b636e;
             }
             h1 {
+                font-family: 'Atomic Age', cursive;
+                font-size: 4em;
                 text-align: center;
-                padding-top: 10px;
+                padding-top: 25px;
                 color: white;
             }
             h2 {
                 font-weight: 100;
                 text-align: center;
+                font-size: 1.5em;
+                padding: 1em;
             }
             #subtitle {
                 text-align: center;
@@ -25,7 +42,7 @@
             }
             #img-div {
                 padding: 20px;
-                background-color: lightgrey;
+                background-color: #c7c7c7;
                 text-align: center;
             }
             #image {
@@ -41,25 +58,30 @@
                 max-width: 500px;
                 margin: 0 auto;
                 text-align: left;
+                color: white;
+                padding-top: 1em;
             }
             blockquote {
-                font-size: 1.10em;
-                font-style: italic;
+                font-family: 'Atomic Age', cursive;
+                font-size: 2em;
                 text-align: center;
+                color: white;
+                padding-top: 1em;
             }
             footer {
                 text-align: center;
-                font-weight: bold;
+                padding-top: 2em;
                 padding-bottom: 2em;
+                color: white;
             }
             a {
-                color: #a80707;
+                color: #88ffff;
             }
         </style>
     </head>
     <div id="main">
         <h1 id="title">Max Roach</h1>
-        <h3 id="subtitle">1924 - 2007</h3>
+        <h2 id="subtitle">1924 - 2007</h2>
         <div id="img-div">
             <img id="image" src="https://i1.wp.com/www.nkmdrums.com/wp-content/uploads/2016/07/img_1766.jpg?resize=952%2C1024" alt="Max Roach playing the drums with a big smile on his face.">
             <div id="img-caption">Portrait of Max Roach, Three Deuces, New York, N.Y., ca. Oct. 1947<br>William P Gottlieb Performing Arts Encyclopedia, Library of Congress</div>
@@ -85,8 +107,10 @@
         </div>
         <blockquote>
       <p>"The world of organized sound is a boundless palette."</p>
-      <div>-- Max Roach</div>
+      <div>— Max Roach</div>
     </blockquote>
-        <footer>Click here to <a id="tribute-link" href="https://en.wikipedia.org/wiki/Max_Roach" target="_blank">read more about Max Roach.</a></footer>
+        <footer>
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Max_Roach" target="_blank">Read more about Max Roach</a>
+        </footer>
     </div>
 </html>
