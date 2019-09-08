@@ -45,9 +45,6 @@
                 grid-gap: 5em;
                 justify-items: center;
             }
-            #icon-1, #icon-2, #icon-3 {
-                padding: 0;
-                padding-right: 20px;
             }
             #icon-1 {
                 width: 100px;
@@ -63,9 +60,6 @@
                 width: 100px;
                 grid-column: 1 / 2;
                 grid-row: 3 / 4;
-            }
-            #p-1, #p-2, #p-3 {
-                padding-right: 50px;
             }
             #p-1 {
                 grid-column: 2 / 3;
@@ -111,7 +105,11 @@
                     justify-items: right;
                 }
                 #icon-1, #icon-2, #icon-3 {
-                    margin-right: 20px
+                    padding: 0;
+                    padding-right: 20px;
+                 }
+                #p-1, #p-2, #p-3 {
+                padding-right: 50px;
                 }
             }
             @media (max-width: 599px) {
@@ -122,6 +120,7 @@
                     width: 256px;
                     height: 144px;
                 }
+            }
         </style>
     </head>
 
