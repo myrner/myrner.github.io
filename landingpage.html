@@ -42,7 +42,6 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr fr;
-                grid-gap: 5em;
                 justify-items: center;
             }
             #icon-1 {
@@ -102,6 +101,7 @@
                 main {
                     width: 80%;
                     justify-items: right;
+                    grid-gap: 5em;
                 }
                 #icon-1, #icon-2, #icon-3 {
                     padding: 0;
@@ -116,6 +116,9 @@
                 }
             }
             @media (max-width: 599px) {
+                #p-1, #p-2, #p-3 {
+                padding-right: 2em;
+                }
                 video {
                 height: 80%;
                 width: 80%;
