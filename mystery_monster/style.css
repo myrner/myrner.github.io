@@ -55,7 +55,9 @@ body {
 }
 
 .start-row {
-  margin: 25px auto;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
   width: 30%;
   font-family: 'Work Sans';
   background-color: black;
@@ -64,4 +66,5 @@ body {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  box-shadow: 3px 3px 3px grey;
 }
