@@ -1,5 +1,3 @@
-// BUGS: step 61 does not match video image or play door1, door2 etc.???, step 60 she adds 'lose'
-
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
@@ -26,7 +24,6 @@ const isClicked = (door) => {
   }
 }
 
-// add 'lose' to second gameover??? she does in the video
 const playDoor = (door) => {
   numClosedDoors--;
   if (numClosedDoors === 0) {
