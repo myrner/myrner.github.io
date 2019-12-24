@@ -132,10 +132,10 @@
         <header>
             <img id="logo" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/Logo+Blue%404x.png">
             <nav id="nav-bar">
-            <a class="nav-link" href="#video">VIDEO</a>
-            <a class="nav-link" href="#services">SERVICES</a>
-            <a class="nav-link" href="#form">CONTACT</a>
-                </nav>
+                <a class="nav-link" href="#video">VIDEO</a>
+                <a class="nav-link" href="#services">SERVICES</a>
+                <a class="nav-link" href="#form">CONTACT</a>
+            </nav>
         </header>
         <main id="services">
             <img id="icon-1" src="https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/fcc/landing/dev%404x.png" alt="family icon">
@@ -160,10 +160,6 @@
         </footer>
 
         <script>
-            // GSAP GOES HERE:
-
-            
-
             let tl = gsap.timeline();
             tl.from("#logo", {x: -800, duration: 1.75, ease: "back.inOut(1.7)"});
             tl.from("#icon-1", {alpha: 0, scale: 1.1, duration: 1, ease: "back.inOut(1.7)"}, "<.8");
@@ -175,8 +171,6 @@
             tl.from("#p-1", {alpha: 0, x: "-15px", duration: 1}, "<");
             tl.from("#p-2", {alpha: 0, x: "-15px", duration: 1}, "<.2");
             tl.from("#p-3", {alpha: 0, x: "-15px", duration: 1}, "<.2");
-
-
         </script>
     </body>
 </html>
