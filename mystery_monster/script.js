@@ -1,4 +1,11 @@
-/* --- Animation --- */
+// wait until DOM is ready
+document.addEventListener("DOMContentLoaded", function(event) {
+
+ // wait until window, stylesheets, images, links, and other media assets are loaded
+ window.onload = function() {
+
+  // Your code and/or method calls here
+  /* --- Animation --- */
 let tl = gsap.timeline();
 
 tl.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
@@ -14,7 +21,8 @@ tl.from("#door1", {duration: .4, alpha: 0}, "<");
 tl.from("#door2", {duration: .4, alpha: 0}, "<.25");
 tl.from("#door3", {duration: .4, alpha: 0}, "<.25");
 
-
+ };
+});
 
 /* --- Game functionality starts here --- */
 
