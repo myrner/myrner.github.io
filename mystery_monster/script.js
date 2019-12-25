@@ -17,7 +17,6 @@ let tl = gsap.timeline();
 tl.from("#page-title", {duration: 1, scale: 0, ease: "back.out"});
 */
 
-
 /* --- Game functionality starts here --- */
 
 
