@@ -4,7 +4,8 @@
         <meta name="google" value="notranslate">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400&display=swap" rel="stylesheet">
+        <script src="gs/gsap.min.js"></script> 
         <title>Sample</title>
         <style>
             html, body {
@@ -35,6 +36,7 @@
                 top: 0px;
                 left: 0px;
                 width: 100vw;
+                z-index: 1;
             }
             a {
                 text-decoration: none;
@@ -60,7 +62,7 @@
                 background-color: #2f2f2f;
                 font-weight: 400;
                 color: lightgrey;
-                box-shadow: 5px 5px 10px lightgrey;
+                box-shadow: 5px 5px 8px grey;
             }
             #box1 {
                 width: 250px;
@@ -177,37 +179,37 @@
             <h2>Gallery</h2>
         </div>
         <div class="container">
-            <div class="box-folio">
+            <div class="box-folio" id="f1">
                 <a href="#">
                     <div id="box1"></div>
                     <p>Red</p>
                 </a>
             </div>
-            <div class="box-folio">
+            <div class="box-folio" id="f2">
                 <a href="#">
                     <div id="box2"></div>
                     <p>Yellow</p>
                 </a>
             </div>
-            <div class="box-folio">
+            <div class="box-folio" id="f3">
                 <a id="projects-top" href="#">
                     <div id="box3"></div>
                     <p>Blue</p>
                 </a>
             </div>
-            <div class="box-folio">
+            <div class="box-folio" id="f4">
                 <a href="#">
                     <div id="box4"></div>
                     <p>Orange</p>
                 </a>
             </div>
-            <div class="box-folio">
+            <div class="box-folio" id="f5">
                 <a href="#">
                     <div id="box5"></div>
                     <p>Green</p>
                 </a>
             </div>
-            <div class="box-folio">
+            <div class="box-folio" id="f6">
                 <a href="#">
                     <div id="box6"></div>
                     <p>Violet</p>
@@ -224,5 +226,93 @@
             <a href="https://www.linkedin.com/in/nielsmyrner/">LinkedIn</a>
             <a href="https://www.nkmdrums.com">Blog</a>
         </footer>
+        <script>
+            gsap.from("#h-box", {alpha: 0, duration: 3});
+
+            document.getElementById("f1").addEventListener('mouseenter', enterHandler1, false);
+            function enterHandler1() {
+              gsap.to("#f1", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f1").addEventListener('mouseleave', exitHandler1, false);
+            function exitHandler1() {
+              gsap.to("#f1", {duration: .4, scale: 1});
+            }
+
+            document.getElementById("f2").addEventListener('mouseenter', enterHandler2, false);
+            function enterHandler2() {
+              gsap.to("#f2", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f2").addEventListener('mouseleave', exitHandler2, false);
+            function exitHandler2() {
+              gsap.to("#f2", {duration: .4, scale: 1});
+            }
+
+            document.getElementById("f3").addEventListener('mouseenter', enterHandler3, false);
+            function enterHandler3() {
+              gsap.to("#f3", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f3").addEventListener('mouseleave', exitHandler3, false);
+            function exitHandler3() {
+              gsap.to("#f3", {duration: .4, scale: 1});
+            }
+
+            document.getElementById("f4").addEventListener('mouseenter', enterHandler4, false);
+            function enterHandler4() {
+              gsap.to("#f4", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f4").addEventListener('mouseleave', exitHandler4, false);
+            function exitHandler4() {
+              gsap.to("#f4", {duration: .4, scale: 1});
+            }
+
+            document.getElementById("f5").addEventListener('mouseenter', enterHandler5, false);
+            function enterHandler5() {
+              gsap.to("#f5", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f5").addEventListener('mouseleave', exitHandler5, false);
+            function exitHandler5() {
+              gsap.to("#f5", {duration: .4, scale: 1});
+            }
+
+            document.getElementById("f6").addEventListener('mouseenter', enterHandler6, false);
+            function enterHandler6() {
+              gsap.to("#f6", {duration: .4, scale: 1.03});
+            }
+
+            document.getElementById("f6").addEventListener('mouseleave', exitHandler6, false);
+            function exitHandler6() {
+              gsap.to("#f6", {duration: .4, scale: 1});
+            }
+
+        </script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
