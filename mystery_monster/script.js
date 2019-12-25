@@ -1,12 +1,7 @@
-/* --- Animation code starts here --- */
-
-document.addEventListener('DOMContentLoaded', function() {
+/* --- Animation --- */
 
 let mySplitText = new SplitText("#page-title", {type: "words,chars", position: "relative"});
-
 gsap.from(mySplitText.chars, {duration: .4, scale: 5, x: "-50px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
-});
-
 
 /* --- Game functionality starts here --- */
 
@@ -115,3 +110,4 @@ const randomChoreDoorGenerator = () => {
 }
 
 startRound();
+
