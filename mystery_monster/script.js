@@ -1,7 +1,11 @@
 /* --- Animation --- */
 
+gsap.from("#page-title", {duration: 1, scale: 0});
+
+/*
 let mySplitText = new SplitText("#page-title", {type: "words,chars", position: "relative"});
 gsap.from(mySplitText.chars, {duration: .4, scale: 5, x: "-50px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
+*/
 
 /* --- Game functionality starts here --- */
 
