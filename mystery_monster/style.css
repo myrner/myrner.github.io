@@ -8,14 +8,13 @@ body {
   color: whitesmoke;
   text-align: center;
   font-family: 'Work Sans';
-  font-size: 24px;
-  padding: 1em;
-  box-shadow: 0px 8px 11px maroon;
+  padding: .5em;
+  box-shadow: 0px 8px 11px grey;
 }
 
 .title-row {
-	margin-top: 42px;
-  margin-bottom: 21px;
+	margin-top: 2em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -24,12 +23,13 @@ body {
   font-size: 20px;
   color: black;
   font-family: 'Work Sans';
+  opacity: 0;
 }
 
 .instructions-row {
 	margin: auto;
   width: 400px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .instructions-number {
@@ -37,6 +37,7 @@ body {
   font-family: 'Work Sans';
   font-size: 36px;
   color: black;
+  opacity: 0;
 }
 
 .instructions-text {
@@ -44,10 +45,12 @@ body {
   font-family: 'Work Sans';
   font-size:14px;
   color: black;
+  opacity: 0;
 }
 
 .door-row {
   text-align: center;
+  opacity: 0;
 }
 
 .door-frame {
@@ -69,4 +72,5 @@ body {
   text-align: center;
   cursor: pointer;
   box-shadow: 3px 3px 3px grey;
+  opacity: 0;
 }

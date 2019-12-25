@@ -4,8 +4,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
  // wait until window, stylesheets, images, links, and other media assets are loaded
  window.onload = function() {
 
-  // Your code and/or method calls here
   /* --- Animation --- */
+
+gsap.set(".instructions-title", {opacity: 1});
+gsap.set(".instructions-number", {opacity: 1});
+gsap.set(".instructions-text", {opacity: 1});
+gsap.set(".door-row", {opacity: 1});
+gsap.set(".start-row", {opacity: 1});
+
 let tl = gsap.timeline();
 
 tl.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
@@ -17,10 +23,12 @@ tl.from(".instructions-title", {duration: 1, alpha: 0});
 tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25}, "<.5");
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
 
-tl.from("#door1", {duration: .4, alpha: 0}, "<");
-tl.from("#door2", {duration: .4, alpha: 0}, "<.25");
-tl.from("#door3", {duration: .4, alpha: 0}, "<.25");
+tl.from("#door1", {duration: 1, scale: .9, ease: "back.out", alpha: 0});
+tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
+tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
 
+
+tl.from(".start-row", {duration: 1, scale: .5, x: -800, alpha: 0, ease: "back.out"}, "<.25");
  };
 });
 
