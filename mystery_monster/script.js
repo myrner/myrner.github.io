@@ -1,4 +1,5 @@
 /* --- Animation code starts here --- */
+
 document.addEventListener('DOMContentLoaded', function() {
 
 let mySplitText = new SplitText("#page-title", {type: "words,chars", position: "relative"});
