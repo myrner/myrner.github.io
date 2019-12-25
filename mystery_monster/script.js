@@ -6,7 +6,6 @@ let mySplitText = new SplitText("#page-title");
 gsap.from(mySplitText.chars, {duration: .4, scale: 5, x: "-50px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
 
 /* --- Game functionality starts here --- */
-/*
 
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
@@ -112,6 +111,4 @@ const randomChoreDoorGenerator = () => {
 }
 
 startRound();
-
-*/
 
