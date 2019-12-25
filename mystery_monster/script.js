@@ -1,12 +1,20 @@
 /* --- Animation --- */
+let tl = gsap.timeline();
 
-
-gsap.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
+tl.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
 
 let mySplitText = new SplitText("#page-title");
-gsap.from(mySplitText.chars, {duration: .4, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
+tl.from(mySplitText.chars, {duration: .4, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
 
-let tl = gsap.timeline();
+tl.from(".instructions-title", {duration: 1, alpha: 0});
+tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25}, "<.5");
+tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
+
+tl.from("#door1", {duration: .4, alpha: 0}, "<");
+tl.from("#door2", {duration: .4, alpha: 0}, "<.25");
+tl.from("#door3", {duration: .4, alpha: 0}, "<.25");
+
+
 
 /* --- Game functionality starts here --- */
 
