@@ -1,21 +1,11 @@
 /* --- Animation code starts here --- */
+document.addEventListener('DOMContentLoaded', function() {
+
 let mySplitText = new SplitText("#page-title", {type: "words,chars", position: "relative"});
 
 gsap.from(mySplitText.chars, {duration: .4, scale: 5, x: "-50px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
+});
 
-/*
-gsap.staggerFrom(mySplitText.chars, 0.8, {alpha:0, scale:0, ease: "Back.easeOut"}, 0.01, allDone);
-
-function allDone(){
-  mySplitText.revert();
-}
-*/
-
-/*
-let tl = gsap.timeline();
-
-tl.from("#page-title", {duration: 1, scale: 0, ease: "back.out"});
-*/
 
 /* --- Game functionality starts here --- */
 
