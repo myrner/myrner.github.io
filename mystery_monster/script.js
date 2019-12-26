@@ -13,7 +13,7 @@ gsap.set(".start-row", {opacity: 1});
 
 let tl = gsap.timeline();
 
-tl.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
+tl.from(".header", {delay: .25, duration: 1, scaleY: .5, transformOrigin: "center top"});
 
 let mySplitText = new SplitText("#page-title");
 tl.from(mySplitText.chars, {duration: .4, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
