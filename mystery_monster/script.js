@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   /* --- Animation --- */
 
+gsap.set(".header", {opacity: 1});
 gsap.set(".instructions-number", {opacity: 1});
 gsap.set(".instructions-text", {opacity: 1});
 gsap.set(".door-row", {opacity: 1});
@@ -13,17 +14,17 @@ gsap.set(".start-row", {opacity: 1});
 
 let tl = gsap.timeline();
 
-tl.from(".header", {delay: .25, duration: 1, scaleY: .5, transformOrigin: "center top"});
+tl.from(".header", {delay: .1, duration: 1, scaleY: 0, transformOrigin: "center top"});
 
 let mySplitText = new SplitText("#page-title");
-tl.from(mySplitText.chars, {duration: 2, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
+tl.from(mySplitText.chars, {duration: 3, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
 
-tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25}, "<.5");
+tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25});
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
 
 tl.from("#door1", {duration: 1, scale: .9, ease: "back.out", alpha: 0});
-tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
-tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
+tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.1");
+tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.1");
 
 
 tl.from(".start-row", {duration: 1, alpha: 0, y: -50, ease: "back.out"}, "<.25");
