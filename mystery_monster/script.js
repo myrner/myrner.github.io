@@ -18,7 +18,6 @@ tl.from(".header", {duration: 1, scaleY: .5, transformOrigin: "center top"});
 let mySplitText = new SplitText("#page-title");
 tl.from(mySplitText.chars, {duration: .4, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
 
-tl.from(".instructions-title", {duration: 1, alpha: 0});
 tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25}, "<.5");
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
 
