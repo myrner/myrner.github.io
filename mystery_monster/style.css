@@ -12,9 +12,9 @@ body {
   box-shadow: 0px 8px 11px grey;
 }
 
-/* RULES FOR SCREENS LARGER THAN 900px */
+/* RULES FOR SCREENS LARGER THAN 850px */
 
-@media (min-width: 809px) {
+@media (min-width: 850px) {
 
 .instructions-row {
 	margin: auto;
@@ -69,9 +69,9 @@ body {
 }
 }
 
-/* RULES FOR SCREENS SMALLER THAN 899px */
+/* RULES FOR SCREENS SMALLER THAN 849px */
 
-@media (max-width: 899px) {
+@media (max-width: 849px) {
 
 body {
   background-color: lightgrey;
