@@ -13,6 +13,7 @@ body {
 }
 
 /* RULES FOR SCREENS LARGER THAN 900px */
+
 @media screen and (min-width: 900px) {
 
 .instructions-row {
