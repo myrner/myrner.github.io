@@ -26,7 +26,7 @@ tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
 tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
 
 
-tl.from(".start-row", {duration: 1, scale: .5, x: -800, alpha: 0, ease: "back.out"}, "<.25");
+tl.from(".start-row", {duration: 2, scale: 2, alpha: 0, ease: "back.out"}, "<.25");
  };
 });
 

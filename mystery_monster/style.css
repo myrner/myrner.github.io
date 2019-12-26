@@ -57,10 +57,10 @@ body {
   margin-bottom: 30px;
   width: 33vw;
   font-family: 'Work Sans';
+  font-size: 1.5rem;
   background-color: black;
   color: white;
   padding: .5em 1em;
-  font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   box-shadow: 3px 3px 3px grey;
