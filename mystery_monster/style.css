@@ -14,7 +14,7 @@ body {
 
 /* RULES FOR SCREENS LARGER THAN 900px */
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
 
 .instructions-row {
 	margin: auto;
@@ -71,7 +71,7 @@ body {
 
 /* RULES FOR SCREENS SMALLER THAN 899px */
 
-@media screen and (max-width: 899px) {
+@media (max-width: 899px) {
 
 body {
   background-color: lightgrey;
