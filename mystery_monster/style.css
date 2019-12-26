@@ -14,7 +14,7 @@ body {
 
 /* RULES FOR SCREENS LARGER THAN 900px */
 
-@media (min-width: 900px) {
+@media (min-width: 809px) {
 
 .instructions-row {
 	margin: auto;
