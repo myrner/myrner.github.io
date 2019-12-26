@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   /* --- Animation --- */
 
-gsap.set(".instructions-title", {opacity: 1});
 gsap.set(".instructions-number", {opacity: 1});
 gsap.set(".instructions-text", {opacity: 1});
 gsap.set(".door-row", {opacity: 1});
