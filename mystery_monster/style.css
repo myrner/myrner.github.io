@@ -8,7 +8,7 @@ body {
   color: whitesmoke;
   text-align: center;
   font-family: 'Work Sans';
-  padding: .5em;
+  padding: .3em;
   box-shadow: 0px 8px 11px grey;
 }
 
@@ -48,11 +48,6 @@ body {
   opacity: 0;
 }
 
-.door-row {
-  text-align: center;
-  opacity: 0;
-}
-
 .door-frame {
   cursor: pointer;
   padding: 10px;
@@ -73,4 +68,23 @@ body {
   cursor: pointer;
   box-shadow: 3px 3px 3px grey;
   opacity: 0;
+}
+
+@media (min-width: 800px) {
+  .door-row {
+    text-align: center;
+    opacity: 0;
+    width: 50%;
+    margin: auto;
+    }
+}
+@media (max-width: 800px) {
+    /* ruleset for 0px - 480px */
+    .door-row {
+      text-align: center;
+      opacity: 0;
+      width: 100%;
+      margin: auto;
+      background-color: whitesmoke;
+    }
 }
