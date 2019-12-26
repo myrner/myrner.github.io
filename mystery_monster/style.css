@@ -8,8 +8,9 @@ body {
   background-color: black;
   color: whitesmoke;
   text-align: center;
-  font-family: 'Work Sans';
-  padding: .3em;
+  font-family: sans-serif;
+  font-size: 1.5;
+  padding: .33em;
   box-shadow: 0px 8px 11px grey;
 }
 
@@ -23,7 +24,7 @@ body {
 
 .instructions-number {
   padding-right: 25px;
-  font-family: 'Work Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
   color: black;
   opacity: 0;
@@ -31,8 +32,8 @@ body {
 
 .instructions-text {
   padding: 10px;
-  font-family: 'Work Sans';
-  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
   color: black;
   opacity: 0;
 }
@@ -55,16 +56,21 @@ body {
   margin: auto;
   margin-top: 15px;
   margin-bottom: 30px;
-  width: 33vw;
-  font-family: 'Work Sans';
+  width: 50vw;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   background-color: black;
   color: white;
   padding: .5em 1em;
   text-align: center;
   cursor: pointer;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 5px 5px 5px grey;
   opacity: 0;
+}
+
+.start-row:hover {
+  background-color: #424242;
+  box-shadow: 8px 8px 8px grey;
 }
 
 

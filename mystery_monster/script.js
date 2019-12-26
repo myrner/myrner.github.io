@@ -16,7 +16,7 @@ let tl = gsap.timeline();
 tl.from(".header", {delay: .25, duration: 1, scaleY: .5, transformOrigin: "center top"});
 
 let mySplitText = new SplitText("#page-title");
-tl.from(mySplitText.chars, {duration: .4, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
+tl.from(mySplitText.chars, {duration: 2, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
 
 tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25}, "<.5");
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
@@ -26,7 +26,7 @@ tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
 tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.4");
 
 
-tl.from(".start-row", {duration: 2, scale: 2, alpha: 0, ease: "back.out"}, "<.25");
+tl.from(".start-row", {duration: 1, alpha: 0, y: -50, ease: "back.out"}, "<.25");
  };
 });
 
