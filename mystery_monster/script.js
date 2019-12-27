@@ -22,9 +22,9 @@ tl.from(mySplitText.chars, {duration: 3, scale: 5, x: "-25px", rotationY:360, al
 tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25});
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
 
-tl.from("#door1", {duration: 1, scale: .9, ease: "back.out", alpha: 0});
-tl.from("#door2", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.1");
-tl.from("#door3", {duration: 1, scale: .9, ease: "back.out", alpha: 0}, "<.1");
+tl.from("#door2", {duration: 1, ease: "back.out", y: 15, alpha: 0});
+tl.from("#door1", {duration: 1, ease: "back.out", y: 15, alpha: 0}, "<.4");
+tl.from("#door3", {duration: 1, ease: "back.out", y: 15, alpha: 0}, "<.4");
 
 
 tl.from(".start-row", {duration: 1, alpha: 0, y: -50, ease: "back.out"}, "<.25");
