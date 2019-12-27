@@ -17,19 +17,21 @@ let tl = gsap.timeline();
 tl.from(".header", {delay: .1, duration: 1, scaleY: 0, transformOrigin: "center top"});
 
 let mySplitText = new SplitText("#page-title");
-tl.from(mySplitText.chars, {duration: 3, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
+tl.from(mySplitText.chars, {duration: 1, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"}, "<");
 
 tl.from(".instructions-number", {duration: .4, ease: "back.out", alpha: 0, x: -50, stagger: .25});
 tl.from(".instructions-text", {duration: .4, ease: "back.out", alpha: 0, x: 50, stagger: .25}, "<");
 
-tl.from("#door2", {duration: 1, ease: "back.out", y: 15, alpha: 0});
-tl.from("#door1", {duration: 1, ease: "back.out", y: 15, alpha: 0}, "<.4");
-tl.from("#door3", {duration: 1, ease: "back.out", y: 15, alpha: 0}, "<.4");
+tl.from("#door1", {duration: 1, ease: "back.out", scale: 0, alpha: 0});
+tl.from("#door2", {duration: 1, ease: "back.out", scale: 0, alpha: 0}, "<.4");
+tl.from("#door3", {duration: 1, ease: "back.out", scale: 0, alpha: 0}, "<.4");
 
 
-tl.from(".start-row", {duration: 1, alpha: 0, y: -50, ease: "back.out"}, "<.25");
+tl.from(".start-row", {duration: 1, alpha: 0, y: 50, ease: "back.out"}, "<.25");
  };
 });
+
+
 
 /* --- Game functionality starts here --- */
 
@@ -68,10 +70,10 @@ const playDoor = (door) => {
 }
 }
 
-const closedDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/Monster+Game/door.png";
-const botDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/Monster+Game/monster.png";
-const beachDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/Monster+Game/flowers1.png";
-const spaceDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/Monster+Game/flowers2.png";
+const closedDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/better_together/door.png";
+const botDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/better_together/both.png";
+const beachDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/better_together/cat.png";
+const spaceDoorPath = "https://s3-us-west-2.amazonaws.com/niels.myrner/web.dev.projects/better_together/dog.png";
 
 doorImage1.onclick = () => {
 if (currentlyPlaying && !isClicked(door1)) {
