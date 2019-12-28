@@ -120,6 +120,7 @@ function gameOver(status) {
     gsap.from(".start-row", 2, {scale: 1.3, ease: "elastic.out(1, 0.3)"});
   } else {
     startButton.innerHTML = 'Game over! Play Again?';
+    gsap.from(".start-row", 2, {scale: 1.3, ease: "elastic.out(1, 0.3)"});
   }
   currentlyPlaying = false;
 }
