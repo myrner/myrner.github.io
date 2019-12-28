@@ -115,6 +115,9 @@ const startRound = () => {
 function gameOver(status) {
   if (status === 'win') {
     startButton.innerHTML = 'You win! Play Again?';
+    let mySplitText = new SplitText("#page-title");
+    gsap.from(mySplitText.chars, {duration: 1, scale: 5, x: "-25px", rotationY:360, alpha: 0, stagger: 0.05, ease: "Back.easeOut"});
+    gsap.from(".start-row", 2, {scale: 1.3, ease: "elastic.out(1, 0.3)"});
   } else {
     startButton.innerHTML = 'Game over! Play Again?';
   }
