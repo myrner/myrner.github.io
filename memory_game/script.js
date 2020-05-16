@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   window.addEventListener("load", function() {
     
 //Start of tweening Code
-gsap.from(".back-face", {scale: 0, alpha: 0, stagger: .1, duration: 1.5, ease: "power4.out"});
+gsap.from(".back-face", {scale: 0, alpha: 0, duration: 1.5, ease: "power4.out"});
  
 //End of tweening Code
     
