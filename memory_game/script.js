@@ -27,7 +27,7 @@ function checkForMatch() {
   if (firstCard.dataset.framework === secondCard.dataset.framework) counter++;
   if (counter == 6) {
   gsap.to("#win", {display:'flex'});
-  gsap.from("#win", {delay: .5, duration: 1, alpha: 0, x: -1000, ease: "power4.out"});
+  gsap.from("#win", {delay: .5, duration: 1, alpha: 0, x: -500, ease: "power4.out"});
 }
 
   isMatch ? disableCards() : unflipCards();
