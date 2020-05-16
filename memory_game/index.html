@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Color Match</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="win">
+    <div id="win-box">
+      <p>Great job!</p>
+      <button onClick="window.location.reload();" id="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <section class="memory-game">
+    <div class="memory-card" data-framework="one">
+      <div class="front-face" id="front-1"></div>
+      <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="one">
+      <div class="front-face" id="front-1"></div>
+      <div class="back-face"></div>
+    </div>
+
+    <div class="memory-card" data-framework="two">
+      <div class="front-face" id="front-2"></div>
+      <div class="back-face" id="back"></div>
+    </div>
+    <div class="memory-card" data-framework="two">
+      <div class="front-face" id="front-2"></div>
+      <div class="back-face"></div>
+    </div>
+
+    <div class="memory-card" data-framework="three">
+      <div class="front-face" id="front-3"></div>
+      <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="three">
+      <div class="front-face" id="front-3"></div>
+      <div class="back-face"></div>
+    </div>
+
+    <div class="memory-card" data-framework="four">
+      <div class="front-face" id="front-4"></div>
+      <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="four">
+      <div class="front-face" id="front-4"></div>
+      <div class="back-face"></div>
+    </div>
+
+    <div class="memory-card" data-framework="five">
+      <div class="front-face" id="front-5"></div>
+      <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="five">
+      <div class="front-face" id="front-5"></div>
+      <div class="back-face"></div>
+    </div>
+
+    <div class="memory-card" data-framework="six">
+      <div class="front-face" id="front-6"></div>
+      <div class="back-face"></div>
+    </div>
+    <div class="memory-card" data-framework="six">
+      <div class="front-face" id="front-6"></div>
+      <div class="back-face"></div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
