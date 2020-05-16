@@ -68,7 +68,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /* intro shuffle tween in all cards */
 
-/*
+
 document.addEventListener("DOMContentLoaded", function(event) {
   
   // wait until images, links, fonts, stylesheets, scripts, and other media assets are loaded
@@ -84,7 +84,6 @@ gsap.from(".back-face", {scale: 0, alpha: 0, stagger: .1, duration: 1.5, ease: "
   
 });
 
-*/
 
 
 
