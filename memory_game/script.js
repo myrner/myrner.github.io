@@ -25,7 +25,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   if (firstCard.dataset.framework === secondCard.dataset.framework) counter++;
-  if (counter == 6) {
+  if (counter == 1) {
   gsap.to("#win", {display:'flex'});
   gsap.from("#win", {delay: .5, duration: 1, alpha: 0, x: -1000, ease: "power4.out"});
 }
