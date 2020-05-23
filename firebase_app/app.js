@@ -3,7 +3,7 @@ const cafeList = document.querySelector('#cafe-list');
 // create element and render cafe
 function renderCafe(doc){
 	let li = document.createElement('li');
-	let name = document.createELement('span');
+	let name = document.createElement('span');
 	let city = document.createElement('span');
 
 	li.setAttribute('data-id', doc.id);
