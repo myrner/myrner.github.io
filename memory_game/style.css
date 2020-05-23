@@ -103,11 +103,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: .66em;
-  padding-bottom: .66em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   padding-right: 1.33em;
   padding-left: 1.33em;
-  border: solid 1px black;
+  border: solid 15px #333333;
 }
 
 #play-again {
