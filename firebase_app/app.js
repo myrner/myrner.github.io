@@ -96,3 +96,17 @@ db.collection('cafes').orderBy('city').onSnapshot(snapshot => {
 });
 
 
+/*
+//updating data
+db.collection('cafes').doc('*****ID OF LI ITEM GOES HERE*****').update({
+	name: 'New Name'
+});
+*/
+
+/*
+//setting data - completely overrides document with new properties 
+db.collection('cafes').doc('******ID OF LI ITEM GOES HERE*****').set({
+	name: 'Overide Name';
+	city: 'Override City';
+});
+*/
