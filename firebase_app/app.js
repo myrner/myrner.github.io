@@ -27,12 +27,14 @@ function renderCafe(doc){
 	})
 }
 
+/*
 //getting data - basic all
 db.collection('cafes').get().then((snapshot) => {
 	snapshot.docs.forEach(doc => {
 		renderCafe(doc);
 	})
 });
+*/
 
 /*
 //getting data - ordered by name alphabetical, only in San Francisco
@@ -78,4 +80,19 @@ form.addEventListener('submit', (e) => {
 	});
 	form.name.value = '';
 	form.city.value = '';
-})
+});
+
+//real-time data change listener
+db.collection('cafes').orderBy('city').onSnapshot(snapshot => {
+	let changes = snapshot.docChanges();
+	changes.forEach(change => {
+		if(change.type == 'added'){
+			renderCafe(change.doc);
+		} else if (change.type == 'removed'){
+			let li = cafeList.querySelector('[data-id=' + change.doc.id + ']');
+			cafeList.removeChild(li);
+		}
+	})
+});
+
+
