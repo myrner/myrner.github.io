@@ -27,13 +27,47 @@ function renderCafe(doc){
 	})
 }
 
-//getting data
+//getting data - basic all
 db.collection('cafes').get().then((snapshot) => {
 	snapshot.docs.forEach(doc => {
 		renderCafe(doc);
 	})
 });
 
+/*
+//getting data - ordered by name alphabetical, only in San Francisco
+db.collection('cafes').where('city', '==', 'San Francisco').orderBy('name').get().then((snapshot) => {
+	snapshot.docs.forEach(doc => {
+		renderCafe(doc);
+	})
+});
+*/
+
+/*
+//getting data - order by name alphabetical - lower case will come at end
+db.collection('cafes').orderBy('name').get().then((snapshot) => {
+	snapshot.docs.forEach(doc => {
+		renderCafe(doc);
+	})
+});
+*/
+
+/*
+//getting data with specific query - case sensitive
+db.collection('cafes').where('city', '==', 'San Francisco').get().then((snapshot) => {
+	snapshot.docs.forEach(doc => {
+		renderCafe(doc);
+	})
+});
+
+//getting data with specific query - case sensitive - later/earlier in alphabet
+db.collection('cafes').where('city', '>', 'g').get().then((snapshot) => {
+	snapshot.docs.forEach(doc => {
+		renderCafe(doc);
+	})
+});
+
+*/
 
 //saving data
 form.addEventListener('submit', (e) => {
