@@ -16,6 +16,7 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  visibility: hidden;
   }
 
 .memory-card {

@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   window.addEventListener("load", function() {
     
 //Start of tweening Code
-gsap.from(".back-face", {scale: 0, alpha: 0, duration: 1.5, ease: "power4.out"});
+gsap.set(".memory-game", {visibility:"visible"});
+gsap.from(".back-face", {scale: 0, alpha: 0, duration: 3, ease: "power4.out"});
  
 //End of tweening Code
     
