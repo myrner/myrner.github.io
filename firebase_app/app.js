@@ -27,6 +27,46 @@ function renderCafe(doc){
 	})
 }
 
+//saving data
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	db.collection('cafes').add({
+		name: form.name.value,
+		city: form.city.value
+	});
+	form.name.value = '';
+	form.city.value = '';
+});
+
+//real-time data change listener
+db.collection('cafes').orderBy('city').onSnapshot(snapshot => {
+	let changes = snapshot.docChanges();
+	changes.forEach(change => {
+		if(change.type == 'added'){
+			renderCafe(change.doc);
+		} else if (change.type == 'removed'){
+			// let li = cafeList.querySelector('[data-id=' + change.doc.id + ']');
+			let li = cafeList.querySelector(`[data-id="${change.doc.id}" ]`);
+			cafeList.removeChild(li);
+		}
+	})
+});
+
+/*
+//updating data
+db.collection('cafes').doc('*****ID OF LI ITEM GOES HERE*****').update({
+	name: 'New Name'
+});
+*/
+
+/*
+//setting data - completely overrides document with new properties 
+db.collection('cafes').doc('******ID OF LI ITEM GOES HERE*****').set({
+	name: 'Overide Name';
+	city: 'Override City';
+});
+*/
+
 /*
 //getting data - basic all
 db.collection('cafes').get().then((snapshot) => {
@@ -69,45 +109,4 @@ db.collection('cafes').where('city', '>', 'g').get().then((snapshot) => {
 	})
 });
 
-*/
-
-//saving data
-form.addEventListener('submit', (e) => {
-	e.preventDefault();
-	db.collection('cafes').add({
-		name: form.name.value,
-		city: form.city.value
-	});
-	form.name.value = '';
-	form.city.value = '';
-});
-
-//real-time data change listener
-db.collection('cafes').orderBy('city').onSnapshot(snapshot => {
-	let changes = snapshot.docChanges();
-	changes.forEach(change => {
-		if(change.type == 'added'){
-			renderCafe(change.doc);
-		} else if (change.type == 'removed'){
-			// let li = cafeList.querySelector('[data-id=' + change.doc.id + ']');
-			let li = cafeList.querySelector(`[data-id="${change.doc.id}" ]`);
-			cafeList.removeChild(li);
-		}
-	})
-});
-
-
-/*
-//updating data
-db.collection('cafes').doc('*****ID OF LI ITEM GOES HERE*****').update({
-	name: 'New Name'
-});
-*/
-
-/*
-//setting data - completely overrides document with new properties 
-db.collection('cafes').doc('******ID OF LI ITEM GOES HERE*****').set({
-	name: 'Overide Name';
-	city: 'Override City';
-});
 */
