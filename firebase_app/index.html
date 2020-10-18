@@ -1,51 +1,36 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-
-        <h1>SHOPPING LIST</h1>
-
-        <div class="content">
-
-            <form id="add-cafe-form">
-              <input required type="text" name="name" placeholder="Item">
-              <input required type="text" name="city" placeholder="Quantity">
-              <button>ADD ITEM</button>
-            </form>
-
-            <ul id="cafe-list"></ul>
-
-        </div>
-
-        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-
-        <!-- Add Firebase products that you want to use -->
-        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
-
-        <script>
-              // Your web app's Firebase configuration
-              var firebaseConfig = {
-                apiKey: "AIzaSyBOiBQQsAU2uLjyE6eezzKvmvCbdBXZMeU",
-                authDomain: "list-app-d5681.firebaseapp.com",
-                databaseURL: "https://list-app-d5681.firebaseio.com",
-                projectId: "list-app-d5681",
-                storageBucket: "list-app-d5681.appspot.com",
-                messagingSenderId: "641034563680",
-                appId: "1:641034563680:web:27e4329ed0853ea7681305",
-                measurementId: "G-JWVZQJBNM7"
-              };
-              // Initialize Firebase
-              firebase.initializeApp(firebaseConfig);
-              firebase.analytics();
-              const db = firebase.firestore();
-        </script>
-
-        <script src="app.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>SHOPPING LIST</h1>
+    <div class="content">
+        <form id="add-cafe-form">
+          <input required type="text" name="name" placeholder="Item">
+          <input required type="text" name="city" placeholder="Quantity">
+          <button>ADD ITEM</button>
+        </form>
+        <ul id="cafe-list"></ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBOiBQQsAU2uLjyE6eezzKvmvCbdBXZMeU",
+        authDomain: "list-app-d5681.firebaseapp.com",
+        databaseURL: "https://list-app-d5681.firebaseio.com",
+        projectId: "list-app-d5681",
+        storageBucket: "list-app-d5681.appspot.com",
+        messagingSenderId: "641034563680",
+        appId: "1:641034563680:web:27e4329ed0853ea7681305",
+        measurementId: "G-JWVZQJBNM7"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+  </body>
 </html>
